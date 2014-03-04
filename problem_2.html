@@ -7,18 +7,15 @@
     <h1>Problem 2</h1>
     <h2> <script type="text/javascript">
       var fibNumbers = function() {
-      var fib = new Array;
       var i = 1
       var n = 1
+      var total = 0
       while ( i < 4000000 ) {
         var x = i + n ;
         if (x%2 === 0)
-          fib.push(x) ;
+          total = total + x;
         n = i
         i = x };
-        var total = fib.reduce(function(a, b){
-          return a + b;
-        });
         document.write(total);
       };
       fibNumbers();
