@@ -1,0 +1,27 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <title>Project Euler 2</title>
+</head>
+  <body>
+    <h1>Problem 2</h1>
+    <script type="text/javascript">
+      var fibNumbers = function() {
+      var fib = new Array;
+      var i = 1
+      var n = 1
+      while ( i < 4000000 ) {
+        var x = i + n ;
+        if (x%2 === 0)
+          fib.push(x) ;
+        n = i
+        i = x };
+        var total = fib.reduce(function(a, b){
+          return a + b;
+        });
+        return total
+      };
+    </script>
+  </body>
+</html>
+
